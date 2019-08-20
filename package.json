@@ -1,0 +1,36 @@
+{
+  "name": "abfront",
+  "version": "1.0.0",
+  "description": "江西安邦前端",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pingchongqing/abfront.git"
+  },
+  "keywords": [
+    "website",
+    "frontend"
+  ],
+  "author": "pcq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pingchongqing/abfront/issues"
+  },
+  "homepage": "https://github.com/pingchongqing/abfront#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.19.1",
+    "next": "^9.0.3",
+    "rc-pagination": "^1.20.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "swiper": "^4.5.0"
+  }
+}

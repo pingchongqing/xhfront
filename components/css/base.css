@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	font-size: 100px;
+}
+body {
+	line-height: 1;
+	font-size: .14rem;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.align-right {
+	text-align: right;
+}
+.clearfix{zoom:1;clear: both;}
+.content-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+
+.curriculum {
+    height: auto;
+    width: 180px;
+    text-align: center;
+    color: #B5B4B4;
+    font-size: 14px;
+}
+.curriculum .wx-code{
+	width: 180px;
+  padding-bottom: 8px;
+}
+.curriculum .wx-code img{
+	width: 50%;
+}
+
+.enrollment {
+    color: #fff;
+    height: auto;
+    margin-left: 5%;
+    text-align: center;
+    width: 30%;
+}
+.enrollment .font-07 {
+    font-size: 18px;
+}
+.enrollment .font-02 {
+    font-size: 1.5em;
+}
+.online {
+    color: #fff;
+    height: auto;
+    width: 36%;
+}
+.online .sl{
+	height: 32px;
+	padding-left: 40px;
+	font-size: 24px;
+	color: #84909C;
+}
+.f_tit {
+    color: #B5B4B4;
+    font-family: "å¾®è½¯é›…é»‘", "Arial Black",Gadget,sans-serif;
+    font-size: 18px;
+    height: 65px;
+    position: relative;
+    border-top: 1px solid #2E3842;
+    padding-top: 17px;
+    margin-top: 15px;
+}
+.f_tit.f_wechat.img{
+	max-width:180px;
+	max-height:180px;
+}
+.ch-tit {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "å¾®è½¯é›…é»‘";
+    font-size: 14px;
+	margin-top:6px;
+}
+.f_btn {
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.f_btn a {
+    background: none repeat scroll 0 0 #e91b00;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 8px 5px 90px;
+    transition: all 0.4s ease 0s;
+}
+.f_btn a:hover {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 20px;
+    color: #e91b00;
+}
+.b-line {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+	bottom: 17px;
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 160px;
+}
+.b-line-long {
+	width: 340px;
+}
+.f-banquan {
+    color: rgba(255, 255, 255, 0.3);
+    line-height: 20px;
+}
+
+
+.snd-banner {
+  height: 265px;
+  color: #fff;
+}
+.snd-banner.product {
+  background: #66a5cb;
+}
+.snd-banner.snd-news {
+  background: #94ccdc;
+}
+.snd-banner.snd-contact {
+  background: #cbd8e6;
+}
+.snd-banner img {
+  float: left;
+  margin-right: 120px;
+  margin-left: 110px;
+}
+.snd-banner.contact img {
+  margin-right: 0;
+  margin-left: 0;
+}
+.snd-banner h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.snd-banner p {
+  line-height: 200%;
+}
+
+.content-box {
+  min-height: 700px;
+  background: #f4f4f4;
+  background: linear-gradient(#fff, #dedede);
+}
+.content-box.snd-news {
+  min-height: 500px;
+  padding-bottom: 60px;
+}
+
+#iewarn {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background: #ffd885;
+  color: #ff0000;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+/* Embedded content ========================================================================== */
+img{-webkit-box-sizing: border-box; box-sizing: border-box; vertical-align: middle;  border: 0; }
+svg:not(:root){overflow: hidden;}
+
+ul, menu, dir{-webkit-margin-before:0;-webkit-margin-after: 0;-webkit-padding-start:0}
+
+
+
+@media only screen and (max-width: 640px){
+  
+  .online {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .online .sl {
+    text-align: center;
+    padding-left: 0;
+  }
+  .f_tit {
+    padding-left: 15px;
+  }
+  .footerBar {
+    min-height: 60px;
+    height: auto;
+    padding: 0 15px;
+    line-height: 30px;
+  }
+  .curriculum {
+    width: 100%;
+  }
+  .curriculum .wx-code {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  .snd-banner {
+    text-align: center;
+  }
+  .snd-banner img {
+    margin-left: 15px;
+    margin-right: 15px;
+    float: none;
+  }
+  .snd-banner h1 {
+    display: none;
+  }
+  .snd-banner p {
+    display: none;
+  }
+  .content-box  {
+    min-height: 400px;
+  }
+  .content-box.snd-news {
+    min-height: 400px;
+    padding-bottom: 20px;
+  }
+  .snd-banner {
+    height: auto;
+  }
+}
