@@ -3,7 +3,7 @@ const { parse } = require('url')
 const next = require('next')
 const express = require('express')
 
-const API_HOST = 'http://localhost:3000'
+const API_HOST = 'http://localhost:3001'
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dir: '.', dev })
@@ -21,7 +21,7 @@ const devProxy = {
     changeOrigin: true
   }
 }
-const port = 2000
+const port = 2001
 const env = process.env.NODE_ENV
 let server
 app.prepare().then(() => {

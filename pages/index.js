@@ -7,13 +7,6 @@ import { parseTime } from '../utils'
 import { fetchArtclsDetail, fetchArticleList } from '../api'
 
 export default class Index extends React.Component {
-  static async getInitialProps({ req }) {
-    const result = await fetchArtclsDetail({ _id: '5d56b678169dac38f4428cb3' })
-    const aboutUs = result.data
-    const newsListRes = await fetchArticleList({ pageNum: 1, pageSize: 10 })
-    const newsList = newsListRes.data.list || []
-    return { aboutUs, newsList }
-  }
   componentDidMount() {
     new Swiper ('.swiper-container', {
       loop: true,
@@ -33,50 +26,10 @@ export default class Index extends React.Component {
     return { __html: html }
   }
   render() {
-    const { aboutUs, newsList } = this.props
     return (
       <Layout>
         <div className="banner">
-          <img src="/static/images/banner.jpg" alt="安邦水利banner" />
-        </div>
-        <div className="bg-e5eaed">
-          <div className="w1200 about">
-            <div className="title">
-              <span>关于我们</span>
-            </div>
-            <div className="content">
-              <div className="content-left">
-                <img src="/static/images/pic.jpg" />
-              </div>
-              <div className="content-right">
-                <span dangerouslySetInnerHTML={this.createMarkup(aboutUs.content)}></span>
-                <p className="align-right">
-                  <a href="#">查看更多></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w1200 news">
-          <div className="title">
-            <span>公司新闻</span>
-          </div>
-          <div className="swiper-container">
-            <div className="swiper-wrapper news-content">
-              {newsList.map(news => (
-                <div onClick={()=>{Router.push({pathname:'/detail',query:{_id:news._id}})}} className="swiper-slide news-box" style={{cursor: 'pointer'}} key={news._id}>
-                  <div className="news-pic">
-                    <img src={news.picPath} />
-                  </div>
-                  <h3>{news.title}</h3>
-                  <p className="time">{parseTime(news.createDate)}</p>
-                  <div className="des">{news.keyWord}</div>
-                </div>
-              ))}
-            </div>
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
-          </div>
+          <img src="/static/images/banner.jpg" alt="兴辉水利banner" />
         </div>
         <div className="bg-e5eaed">
           <div className="w1200 contact">
