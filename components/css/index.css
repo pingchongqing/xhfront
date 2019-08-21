@@ -1,35 +1,99 @@
+.topnav {
+  height: .24rem;
+  background: #e7e7e7;
+}
+.toptext {
+  line-height: .24rem;
+  text-align: right;
+  color: #999;
+}
 .header {
   width: 12rem;
-  height: 1.05rem;
+  height: .95rem;
   margin: 0 auto;
 }
 .header .logo {
-  width: 5.35rem;
+  width: 2.35rem;
   float: left;
 }
 .header .nav {
   float: left;
-  width: 6.65rem;
-  height: 1.05rem;
+  width: 9.65rem;
+  height: .95rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 .header .nav ul {
   margin-left: .5rem;
   margin-top: .3rem; 
-  font-family: 'Microsoft YaHei', Arial, sans-serif
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
 }
 .header .nav ul li{
   padding: 0 30px;
   float: left;
+  position: relative;
+}
+.header .nav ul li .submenu {
+  position: absolute;
+  width: .8rem;
+  transition: all .3s ease-in;
+  border-radius: 5px;
+  background: #f5f5f5;
+  border: #f1f1f1 1px solid;
+  top: .2rem;
+  display: none;
+  z-index: 10;
+  padding: 0 .2rem;
+  left: 0;
+}
+.header .nav ul li .submenu::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #f1f1f1;
+  border-left: #fff 1px solid;
+  border-top: #fff 1px solid;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -8px;
+  left: .48rem;
+  box-shadow: 0 0 1px #f1f1f1;
+  z-index: 6;
+  overflow: hidden;
+}
+.header .nav ul li .submenu span {
+  display: block;
+  z-index: 10;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  background: #f5f5f5;
+  border-bottom: #e7e7e7 1px solid;
+}
+.header .nav ul li .submenu span a {
+  color: #525252;
+}
+.header .nav ul li .submenu span a:hover {
+  color: #0c6996;
+}
+.header .nav ul li .submenu span a:after {
+  display: none;
+}
+.header .nav ul li:hover .submenu {
+  opacity: 1;
+  top: .33rem;
+  display: block;
+  box-shadow: #ccc 0 5px 5px;
 }
 .header .nav ul li a {
   color: #525252;
+  font-weight: bold;
+  font-size: .15rem;
   text-decoration: none;  
   position: relative; 
   transition: all .3s;
+  padding: .2rem 0;
 }
 .header .nav ul li a:after {
   display: block;
@@ -37,12 +101,12 @@
   margin-top: 5px;
   width: 0;
   height: 2px;
-  background: #00a191;
+  background: #0c6996;
   content: '';
   transition: all .3s;
 }
 .header .nav ul li a:hover {
-  color: #00a191;
+  color: #0c6996;
   transition: all .3s;
 }
 .header .nav ul li a:hover:after{
@@ -55,7 +119,7 @@ a {
   transition: all .3s;
 }
 a:hover {
-  color: #00a191;
+  color: #0c6996;
   text-decoration: none;
 }
 
@@ -93,7 +157,7 @@ a:hover {
   height: 3px;
   left: 50%;
   transform: translate(-.23rem);
-  background: #00a191;
+  background: #0c6996;
   content: '';
 }
 .about .content{
